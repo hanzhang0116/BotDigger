@@ -1,0 +1,500 @@
+1	ICBC	www.icbc.com
+2	China Construction Bank	www.ccb.com
+3	Agricultural Bank of China	www.abchina.com
+4	JPMorgan Chase	www.jpmorganchase.com
+5	Berkshire Hathaway	www.berkshirehathaway.com
+6	Exxon Mobil	exxonmobil.com
+7	General Electric	www.ge.com
+8	Wells Fargo	www.wellsfargo.com
+9	Bank of China	www.boc.cn
+10	PetroChina	www.petrochina.com
+11	Royal Dutch Shell	www.shell.com
+12	Toyota Motor	www.toyota.com
+13	Bank of America	www.bankofamerica.com
+14	HSBC Holdings	www.hsbc.com
+15	Apple	www.apple.com
+16	Citigroup	www.citigroup.com
+17	BP	www.bp.com
+18	Chevron	www.chevron.com
+19	Volkswagen Group	www.volkswagenag.com
+20	Wal-Mart Stores	www.walmart.com
+21	Gazprom	www.gazprom.com
+22	Samsung Electronics	www.samsung.com
+23	AT&T	www.att.com
+24	BNP Paribas	www.bnpparibas.com
+25	Total	www.total.com
+26	Verizon Communications	www.verizon.com
+27	Allianz	www.allianzlife.com
+28	China Mobile	www.chinamobileltd.com
+29	Sinopec-China Petroleum	www.sinopecgroup.com
+30	Petrobras	www.petrobras.com
+31	Daimler	www.daimler.com
+32	Microsoft	www.microsoft.com
+33	AXA Group	www.axa.com
+34	Rosneft	www.rosneft.com
+35	IBM	www.ibm.com
+36	Nestle	www.nestle.com
+37	Mitsubishi UFJ Financial	www.mufg.jp
+38	Vodafone	www.vodafone.com
+39	Eni	www.eni.com
+40	Procter & Gamble	www.pg.com
+41	Johnson & Johnson	www.jnj.com
+42	American International Group	www.aig.com
+43	Banco Santander	www.santander.com
+44	BHP Billiton	www.bhpbilliton.com
+45	Pfizer	www.pfizer.com
+46	Itaú Unibanco Holding	www.itau.com
+47	Ford Motor	www.ford.com
+48	BMW Group	www.bmwgroup.com
+49	Commonwealth Bank	www.commbank.com.au
+50	EDF	www.edf.org
+51	Statoil	www.statoil.com
+52	Google	www.google.com
+53	Siemens	www.siemens.com
+54	Novartis	www.novartis.com
+55	Royal Bank of Canada	www.rbcroyalbank.com
+56	Sumitomo Mitsui Financial	www.smfg.co.jp
+57	Comcast	www.comcast.com
+58	Sberbank	www.sberbank.ru
+59	Goldman Sachs Group	www.goldmansachs.com
+60	Westpac Banking Group	www.westpac.com.au
+61	Nippon Telegraph & Tel	www.ntt.co.jp
+62	Ping An Insurance Group	www.pingan.com
+63	Banco Bradesco	www.bradesco.com.br
+64	Anheuser-Busch InBev	www.ab-inbev.com
+65	Bank of Communications	www.bankcomm.com
+66	China Life Insurance	www.chinalife.com.cn
+67	General Motors	www.gm.com
+68	Telefónica	www.telefonica.com
+69	MetLife	www.metlife.com
+70	Honda Motor	www.honda.com
+71	Enel	www.enel.com
+72	BASF	www.basf.com
+73	Softbank	www.softbank.jp
+74	National Australia Bank	www.nab.com.au
+75	ANZ	www.anz.com
+76	ConocoPhillips	www.conocophillips.com
+76	TD Bank Group	www.td.com
+78	Intel	www.intel.com
+79	UBS	www.ubs.com
+80	Hewlett-Packard	www.hp.com
+81	Coca-Cola	www.coca-cola.com
+82	Cisco Systems	www.cisco.com
+83	LukOil	www.lukoil.com
+84	UnitedHealth Group	www.unitedhealthgroup.com
+84	Boeing	www.boeing.com
+84	Zurich Insurance Group	www.zurich.com
+87	Hyundai Motor	www.hyundai.com
+87	Sanofi	www.sanofi.com
+89	Credit Agricole	www.credit-agricole.com
+90	United Technologies	www.utc.com
+90	Roche Holding	www.roche.com
+92	Munich Re	www.munichre.com
+93	PepsiCo	www.pepsico.com
+94	Oracle	www.oracle.com
+95	Bank of Nova Scotia	www.scotiabank.com
+96	CVS Caremark	www.caremark.com
+97	ING Group	www.ing.com
+98	Saudi Basic Industries	www.sabic.com
+99	Merck & Co	www.merck.com
+100	Walt Disney	www.disney.com
+101	Mizuho Financial	www.mizuho-fg.co.jp
+102	China Merchants Bank	www.cmbchina.com
+103	Société Générale	www.societegenerale.com
+104	American Express	www.americanexpress.com
+104	Banco do Brasil	www.bb.com.br
+106	Morgan Stanley	www.morganstanley.com
+107	Prudential	www.prudential.com
+108	CNOOC	www.cnooc.com.cn
+109	Rio Tinto	www.riotinto.com
+110	Unilever	www.unilever.com
+111	Nissan Motor	www.nissan.com
+112	Credit Suisse Group	www.credit-suisse.com
+113	E.ON	www.eon.com
+114	Generali Group	www.generali.com
+115	América Móvil	www.americamovil.com
+116	GlaxoSmithKline	www.gsk.com
+117	Schlumberger	www.slb.com
+118	BBVA-Banco Bilbao Vizcaya	www.bbva.com
+119	Nordea Bank	www.nordea.com
+120	Bayer	www.bayer.com
+121	China Minsheng Banking	www.cmbc.com.cn
+122	Caterpillar	www.cmbc.com.cn
+123	Standard Chartered	www.sc.com
+124	China Shenhua Energy	www.shenhuachina.com
+125	US Bancorp	www.usbank.com
+126	Mitsubishi Corp	www.mitsubishicorp.com
+127	Dow Chemical	www.dow.com
+128	Ecopetrol	www.ecopetrol.com.co
+129	Industrial Bank	www.industrial-bank.com
+130	Shanghai Pudong Development	www.spdb.com.cn
+131	EADS	www.airbusgroup.com
+132	Swiss Re	www.swissre.com
+133	Iberdrola	www.iberdrola.es
+134	China Citic Bank	www.cncbinternational.com
+135	Reliance Industries	www.ril.com
+136	Hutchison Whampoa	www.hutchison-whampoa.com
+137	Home Depot	www.homedepot.com
+138	Hitachi	www.hitachi.com
+139	Hon Hai Precision	www.foxconn.com
+140	Phillips 66	www.phillips66.com
+141	Capital One Financial	www.capitalone.com
+142	Møller-Maersk	www.maersk.com
+143	Aviva	www.aviva.com
+144	France Telecom	www.orange.com
+145	Deutsche Telekom	www.telekom.com
+146	Bank of Montreal	www.bmo.com
+147	VINCI	www.vinci.com
+148	Mondelēz International	www.mondelezinternational.com
+149	Suncor Energy	www.suncor.com
+150	China Telecom	www.chinatelecom.com.cn
+151	Occidental Petroleum	www.oxy.com
+152	Twenty-First Century Fox, Inc.	www.21cf.com
+153	Mitsui & Co	www.mitsui.com
+154	Qualcomm	www.qualcomm.com
+155	State Bank of India	www.sbi.co.in
+156	Time Warner	www.timewarner.com
+157	Philip Morris International	www.pmi.com
+158	Express Scripts	www.express-scripts.com
+158	Honeywell International	www.honeywell.com
+160	Barclays	www.barclays.com
+160	United Parcel Service	www.ups.com
+162	PNC Financial Services	www.pnc.com
+163	Deutsche Post	www.deutschepost.de
+164	AIA Group	www.aia.com
+165	Duke Energy	www.duke-energy.com
+166	Delta Air Lines	www.delta.com
+167	Deutsche Bank	www.db.com
+168	National Grid	www.nationalgridus.com
+169	ABB	www.abb.com
+170	Amgen	www.amgen.com
+171	EI du Pont de Nemours	www.dupont.com
+172	L'Oréal Group	www.loreal.com
+173	British American Tobacco	www.bat.com
+173	Manulife Financial	www.manulife.com
+175	SAIC Motor	www.saicgroup.com
+176	Oil & Natural Gas	www.ongcindia.com
+177	Walgreen	www.walgreens.com
+178	KDDI	www.kddi.com
+179	Valero Energy	www.valero.com
+180	PTT PCL	www.pttplc.com
+181	Travelers Cos	www.travelers.com
+182	Canadian Imperial Bank	www.cibc.com
+183	AstraZeneca	www.astrazeneca.com
+184	Deere & Co	www.deere.com
+185	Union Pacific	www.up.com
+186	McDonald's	www.mcdonalds.com
+187	WellPoint	www.wellpoint.com
+188	Aflac	www.aflac.com
+189	Tokio Marine Holdings	www.tokiomarinehd.com
+190	Taiwan Semiconductor	www.tsmc.com
+191	Legal & General Group	www.legalandgeneralgroup.com
+192	Christian Dior	www.dior.com
+193	China Unicom	www.chinaunicom.com
+194	3M	www.3m.com
+195	Allstate	www.allstate.com
+196	Schneider Electric	www.schneider-electric.com
+197	DNB	www.dnb.com
+198	Lockheed Martin	www.lockheedmartin.com
+198	Surgutneftegas	www.surgutneftegas.ru
+200	Target	www.target.com
+201	ACE	www.acehardware.com
+202	Denso	www.globaldenso.com
+203	Nomura Holdings	www.nomura.com
+204	Nippon Steel & Sumitomo Metal	www.nssmc.com
+205	Wesfarmers	www.wesfarmers.com.au
+206	China Everbright Bank	www.cebbank.com
+207	SAP	www.sap.com
+208	Jardine Matheson	www.jardines.com
+209	Japan Tobacco	www.jt.com
+210	BG Group	www.bg-group.com
+211	Itochu	www.itochu.co.jp
+212	Carrefour	www.carrefour.com
+213	SABMiller	www.sabmiller.com
+214	Bank of New York Mellon	www.bnymellon.com
+215	Continental	www.conti-online.com
+216	EMC	www.emc.com
+217	Costco Wholesale	www.costco.com
+218	BT Group	www.btplc.com
+219	Eli Lilly & Co	www.lilly.com
+220	Seven & I Holdings	www.7andi.com
+221	Canon	www.canon.com
+221	Lowe's Cos	www.lowes.com
+223	China State Construction	www.cscec.com
+224	Freeport-McMoRan Copper	www.fcx.com
+225	Telstra	www.telstra.com.au
+226	LyondellBasell Industries	www.lyondellbasell.com
+227	China Pacific Insurance	www.cpic.com.cn
+228	Diageo	www.diageo.com
+229	Abbott Laboratories	www.abbott.com
+230	Gas Natural Fenosa	www.gasnaturalfenosa.com
+231	Danske Bank	www.danskebank.com
+232	Aetna	www.aetna.com
+233	Sony	www.sony.com
+234	Aegon	www.aegon.com
+235	Ericsson	www.ericsson.com
+236	Posco	www.posco.com
+237	East Japan Railway	www.eastjapanrail.com
+238	Brookfield Asset Management	www.brookfield.com
+239	Altria Group	www.altria.com
+240	BlackRock	www.blackrock.com
+241	Exelon	www.exeloncorp.com
+242	Danone	www.danone.com
+243	Archer Daniels Midland	www.adm.com
+243	McKesson	www.mckesson.com
+245	Heineken Holding	www.theheinekencompany.com
+246	Hess	www.hess.com
+246	Panasonic	www.panasonic.com
+248	People's Insurance Company	www.peoples-insurance.com
+249	Shinhan Financial Group	www.shinhangroup.co.kr
+250	eBay	www.ebay.com
+251	Natixis	www.natixis.com
+252	Time Warner Cable	www.timewarnercable.com
+253	General Dynamics	www.generaldynamics.com
+254	AbbVie	www.abbvie.com
+255	Medtronic	www.medtronic.com
+256	EXOR	www.exor.com
+257	Bristol-Myers Squibb	www.bms.com
+258	KIA Motors	www.kia.com
+259	SEB	sebgroup.com
+260	KBC Group	www.kbc.ie
+261	FedEx	www.fedex.com
+262	Renault	www.renault.co.uk
+263	Sumitomo Corp	www.sumitomocorp.com
+263	VTB Bank	www.vtb.com
+265	CNP Assurances	www.cnp.fr
+266	MS&AD Insurance	www.ms-ad-hd.com
+267	Hyundai Mobis	www.mobis.co.kr
+268	Halliburton	www.halliburton.com
+269	Danaher	www.danaher.com
+270	Apache	www.apache.org
+271	Marathon Petroleum	www.marathonpetroleum.com
+271	Sun Life Financial	www.sunlife.com
+273	Southern Co	www.southerncompany.com
+274	Ping An Bank	bank.pingan.com
+275	Linde	www.linde.com
+276	NextEra Energy	www.nexteraenergy.com
+277	Saint-Gobain	www.saint-gobain.com
+278	Canadian Natural Resources	www.cnrl.com
+279	Transneft	transneft.ru
+280	Visa	www.visa.com
+281	Rolls-Royce Holdings	www.rolls-royce.com
+282	JX Holdings	www.hd.jx-group.co.jp
+283	Imperial Tobacco Group	www.imperial-tobacco.com
+284	Woolworths	www.woolworths.com.au
+285	Bridgestone	www.bridgestonetire.com
+286	Cigna	www.cigna.com
+287	Standard Bank Group	www.standardbank.com
+288	DBS Group	www.dbs.com
+289	Svenska Handelsbanken	www.handelsbanken.se
+290	BCE	www.bce.ca
+291	Centrica	www.centrica.com
+292	National Oilwell Varco	www.nov.com
+293	Air Liquide	www.airliquide.com
+294	Teva Pharmaceutical Inds	www.tevapharm.com
+295	Old Mutual	www.oldmutual.com
+296	Philips	www.philips.com
+296	Swedbank	www.swedbank.com
+298	Oversea-Chinese Banking	www.ocbc.com
+299	Eaton	www.eaton.com
+300	Directv	www.directv.com
+301	Dai-ichi Life Insurance	www.dai-ichi-life.co.jp
+302	Marubeni	www.marubeni.com
+303	Fresenius	www.fmcna.com
+304	ICICI Bank	www.icicibank.com
+305	China Vanke	www.vanke.com
+306	China Communications Construction	www.ccccltd.cn
+307	State Street	www.statestreet.com
+308	Central Japan Railway	www.jr-central.co.jp
+309	Kroger	www.kroger.com
+310	Johnson Controls	www.johnsoncontrols.com
+311	China Railway Construction	www.crcc.cn
+312	Henkel	www.henkel.com
+313	Inditex	www.inditex.com
+314	Emerson Electric	www.emerson.com
+315	Husky Energy	www.huskyenergy.ca
+316	Teliasonera	www.teliasonera.com
+316	Wilmar International	www.wilmar-international.com
+318	Dominion Resources	www.dom.com
+319	BB&T	www.bbt.com
+320	China Railway Group	www.crecg.com
+321	Sasol	www.sasol.com
+322	NIKE	www.nike.com
+323	Kinder Morgan	www.kindermorgan.com
+324	SingTel	info.singtel.com
+325	CaixaBank	www.caixabank.com
+326	Maybank	www.maybank2u.com.my
+326	OMV Group	www.omv.com
+328	Holcim	www.holcim.us
+329	Reckitt Benckiser Group	www.rb.com
+330	Telenor	www.telenor.com
+331	EOG Resources	www.eogresources.com
+332	Tata Motors	www.tatamotors.com
+333	Power Corp of Canada	www.powercorporation.com
+334	Monsanto	www.monsanto.com
+335	Raytheon	www.raytheon.com
+336	SSE	www.sse.co.uk
+337	Mitsubishi Heavy Industries	www.mhi-global.com
+338	Chubb	www.chubb.com
+339	Accenture	www.accenture.com
+339	Mitsubishi Electric	www.mitsubishielectric.com
+341	American Electric	www.americanelectrical.com
+342	HCA Holdings	www.hcahealthcare.com
+343	Standard Life	www.standardlife.com
+344	Enbridge	www.enbridge.com
+345	Northrop Grumman	www.northropgrumman.com
+346	WPP	www.wpp.com
+347	Kraft Foods Group	www.kraftfoodsgroup.com
+348	Takeda Pharmaceutical	www.takeda.com
+349	Discover Financial Services	www.discover.com
+349	EDP-Energias de Portugal	www.edp.pt
+351	Safran	www.safran-group.com
+352	Volvo Group	www.volvogroup.com
+353	Investor	www.investors.com
+353	Sumitomo Mitsui Trust	www.smth.jp
+355	Fannie Mae	www.fanniemae.com
+356	Samsung Life Insurance	www.samsunglife.com
+357	Las Vegas Sands	www.sands.com
+358	Baxter International	www.baxter.com
+359	Anadarko Petroleum	www.anadarko.com
+359	Michelin Group	www.michelin.com
+361	Sun Hung Kai Properties	www.shkp.com
+362	Ameriprise Financial	www.ameriprise.com
+363	International Paper	www.internationalpaper.com
+364	Gilead Sciences	www.gilead.com
+365	Huaxia Bank	www.hxb.com.cn
+366	Kimberly-Clark	www.kimberly-clark.com
+367	United Overseas Bank	www.uobgroup.com
+368	CBS	www.cbs.com
+369	Toshiba	www.toshiba.com
+370	KB Financial Group	www.kbfg.com
+371	Richemont	www.richemont.com
+372	Merck KGaA	www.merck.de
+373	Femsa	www.femsa.com
+373	Marathon Oil	www.marathonoil.com
+375	Carnival	www.carnival.com
+376	Mapfre	www.mapfreinsurance.com
+377	Freddie Mac	www.freddiemac.com
+378	MTN Group	www.mtn.com
+379	General Mills	www.generalmills.com
+380	Viacom	www.viacom.com
+381	Lafarge	www.lafarge.com
+382	Grupo ACS	www.grupoacs.com
+383	Thermo Fisher Scientific	www.thermofisher.com
+384	Sistema	www.sistema.com
+385	Baker Hughes	www.bakerhughes.com
+386	Automatic Data	www.adp.com
+387	Canadian National Railway	www.cn.ca
+388	Orix	www.orix.com
+389	Talanx	www.talanx.com
+390	TransCanada	www.transcanada.com
+391	Lloyds Banking Group	www.lloydsbankinggroup.com
+392	Isbank	www.isbank.com.tr
+393	Saudi Telecom	www.stc.com.sa
+394	CSX	www.csx.com
+395	Norfolk Southern	www.nscorp.com
+396	Lincoln National	www.lfg.com
+397	Macy's	www.macys.com
+398	Pernod Ricard	pernod-ricard.com
+399	Novo Nordisk	www.novonordisk.com
+400	Cathay Financial	www.corpasia.net
+401	Huaneng Power International	www.hpi.com.cn
+402	Royal Ahold	www.ahold.com
+403	SunTrust Banks	www.suntrust.com
+404	NKSJ Holdings	www.sompo-hd.com
+405	GDF SUEZ	www.gdfsuez.com
+406	Glencore International	www.glencore.com
+407	Qatar National Bank	www.qnb.com.qa
+408	Sampo	www.sampo.com
+409	Magna International	www.magna.com
+410	Komatsu	www.komatsu.com
+411	Fubon Financial	www.fubon.com
+411	Inpex	www.inpex.co.jp
+413	PG&E	www.pge.com
+414	Garanti Bank	www.garanti.com.tr
+415	Illinois Tool Works	www.itw.com
+416	Indian Oil	www.iocl.com
+417	Mitsui Fudosan	www.mitsuifudosan.co.jp
+418	Humana	www.humana.com
+419	Fuji Heavy Industries	www.fhi.co.jp
+419	Syngenta	www.syngenta.com
+421	HDFC Bank	www.hdfcbank.com
+421	Texas Instruments	www.ti.com
+423	Colgate-Palmolive	www.colgatepalmolive.com
+424	NTPC	www.ntpc.co.in
+424	Royal Bank of Scotland	www.rbs.com
+426	Tencent Holdings	www.tencent.com
+427	Swisscom	www.swisscom.ch
+428	Coal India	www.coalindia.in
+429	Bank of Beijing	www.bankofbeijing.com.cn
+430	PPL	www.pplelectric.com
+431	AMP	www.amp.org
+432	Macquarie Group	www.macquarie.com
+433	Prudential Financial	www.prudential.com
+434	HeidelbergCement	www.heidelbergcement.com
+435	UniCredit Group	www.unicreditgroup.eu
+436	Suzuki Motor	www.suzuki.com
+437	Praxair	www.praxair.com
+438	Edison International	www.edison.com
+439	SK Hynix	www.skhynix.com
+440	PPG Industries	www.ppg.com
+441	JFE Holdings	www.jfe-holdings.co.jp
+442	Vale	www.vale.com
+443	Tenaga Nasional	www.tnb.com.my
+444	Resona Holdings	www.resona-gr.co.jp
+445	Toyota Industries	www.toyota-industries.com
+446	Daiwa Securities	www.daiwa-grp.jp
+447	Fifth Third Bancorp	www.53.com
+448	United Continental Holdings	www.unitedcontinentalholdings.com
+449	H&M	www.hm.com
+450	Koç Holding	www.koc.com.tr
+451	Chesapeake Energy	www.chk.com
+452	Amazon.com	www.amazon.com
+453	Intesa Sanpaolo	www.intesasanpaolo.com
+454	Paccar	www.paccar.com
+455	Aon	www.aon.com
+456	Xerox	www.xerox.com
+457	Hana Financial Group	www.hanafn.com
+458	Etisalat	www.etisalat.com
+459	Loews	www.loewshotels.com
+460	CIMB Group Holdings	www.cimb.com
+460	SK Telecom	www.sktelecom.com
+460	Tokyo Electric Power	www.tepco.co.jp
+463	TJX Cos	www.tjx.com
+464	Charles Schwab	www.schwab.com
+465	Associated British Foods	www.abf.co.uk
+465	Principal Financial Group	www.principal.com
+465	Tesco	www.tesco.com
+468	Mitsubishi Estate	www.mec.co.jp
+469	GFNorte	www.banorte.com
+470	Ageas	www.ageas.com
+471	Repsol YPF	www.repsol.com
+472	Sempra Energy	www.sempra.com
+473	T&D Holdings	www.td-holdings.co.jp
+474	New China Life Insurance	www.newchinalife.com
+475	FirstRand	www.firstrand.co.za
+476	Aeon	aeon.co
+477	Akzo Nobel	www.akzonobel.com
+478	Bank Mandiri	www.bankmandiri.co.id
+479	Rogers Communications	www.rogers.com
+480	Swiss Life Holding	www.swisslife.com
+481	Novatek	www.novatek.com
+482	Corning	www.corning.com
+483	Fujifilm Holdings	www.fujifilmholdings.com
+484	Bank Rakyat Indonesia	www.ir-bri.com
+485	CEZ Group	www.cez.cz
+486	Consolidated Edison	www.conedison.com
+487	Akbank	www.akbank.com
+488	Micron Technology	www.micron.com
+489	Covidien	www.covidien.com
+490	Progressive	www.progressive.com
+491	ArcelorMittal	corporate.arcelormittal.com
+491	Saudi Electricity	www.se.com.sa
+493	Alstom	www.alstom.com
+493	National Bank of Canada	www.nbc.ca
+495	Formosa Petrochemical	www.fpcc.com.tw
+496	Cummins	www.cummins.com
+497	SK Innovation	www.skinnovation.com
+498	TE Connectivity	www.te.com
+499	Ecolab	www.ecolab.com
+500	Larsen & Toubro	www.larsentoubro.com
