@@ -1,7 +1,7 @@
 
 ## BotDigger: Detecting DGA Bots in a Single Network Using DNS Traffic
 BotDigger.py is a program to detect DGA-based bots using DNS traffic. It can be deployed in a single enterprise-like network. The inputs of BotDigger include pcap file or DNS log file following certain format (timestamp, source IP, source port, destination IP, destination port, DNS query/answer, DNS rcode, DNS qtype, queried domain).
-**The detials of design and implementation can be found in a technical report at [BotDigger tech report](http://www.cs.colostate.edu/~hanzhang/papers/BotDigger-techReport.pdf).**
+**The details of design and implementation can be found in a technical report at [BotDigger tech report](http://www.cs.colostate.edu/~hanzhang/papers/BotDigger-techReport.pdf).**
 
 1. Section I - Configuration:
 	Three files have to be configured before running BotDigger, including DNSServerList, ExculedDomains, and ExculedHosts. These three files are used to specify local DNS servers, excluded domains, and excluded hosts, respectively. Notice that users need to follow the formats of these files when they change them.
