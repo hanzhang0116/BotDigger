@@ -43,7 +43,7 @@ Options:
                 specify the file that contains English dictionary (e.g., file wordsEn.txt)
   	* -o OFFLINEDOMAINFILE, --offlinefile=OFFLINEDOMAINFILE,
                 specify the file that contains DNS information.
-		File format: each line in the file is a DNS query/response record, composed of 10 fields: timestamp, src_ip, src_port, dst_ip, dst_port, queryID, query(0)/response(1), return code, query type, queried domain. The fields are seperated by space. 
+		File format: each line in the file is a DNS query/response record, composed of 11 fields: timestamp, src_ip, src_port, dst_ip, dst_port, queryID, query(0)/response(1), return code, query type, queried domain, returned IP for resolved domain (blank for NXDomains). The fields are seperated by space. 
   	* -O OFFLINEDOMAINDIRECTORY, --offlinedirectory=OFFLINEDOMAINDIRECTORY,
                 specify the directory that contains DNS files
 		Each file should follow the format of ten fiends decribed above.
