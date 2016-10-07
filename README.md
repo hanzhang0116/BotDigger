@@ -44,6 +44,8 @@ Options:
             specify the network interface (e.g., eth0)
   -f INPUTPCAPFILE, --inputpcap=INPUTPCAPFILE,
             specify the input pcap file
+  -F INPUTPCAPDIR, --inputpcapDir=INPUTPCAPDIR,
+            specify the input pcap directory
   -t TLDLISTFILE, --tld=TLDLISTFILE,
             specify the file that contains TLDs (e.g., file TLDList)
   -b BLWEBSITESFILE, --blwebsites=BLWEBSITESFILE,
