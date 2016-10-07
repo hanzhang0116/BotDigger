@@ -37,7 +37,7 @@ simply run `./PackagesInstallation.sh` to install them all.
 
 3. Section III - Usage:
 
-```
+   ```
 Options:
   -h, --help, show this help message and exit
   -i INTERFACE, --interface=INTERFACE,
@@ -92,20 +92,20 @@ Options:
             disable this when running BotDigger in real time
 ```
 
-`OFFLINEDOMAINFILE` file format: each line in the file is a DNS query/response
+   `OFFLINEDOMAINFILE` file format: each line in the file is a DNS query/response
 record, composed of 11 fields: timestamp, src_ip, src_port, dst_ip, dst_port,
 queryID, query(0)/response(1), return code, query type, queried domain,
 returned IP for resolved domain (blank for NXDomains). The fields are seperated
 by a space.
 
-Each file in the `OFFLINEDOMAINDIRECTORY` should follow the format of ten
+   Each file in the `OFFLINEDOMAINDIRECTORY` should follow the format of ten
 fields decribed above.
 
-`RESULTSFILE` will include the detected bot, clusters of queried suspicious
+   `RESULTSFILE` will include the detected bot, clusters of queried suspicious
 NXDomains, and labeled C&C domains.
 
 4. Example:
-```
+   ```
 python BotDigger.py \
   -B 4 -T 0.10 -w 300 -P "192.168." -R test@example.com \
   -s DNSServerList -t TLDList -b OverloadDNSWebsites \
