@@ -9,4 +9,5 @@ pip install --user \
   pythonwhois \
   dpkt \
   pypcap \
-  netaddr
+  netaddr \
+  dnslib
