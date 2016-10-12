@@ -10,4 +10,5 @@ pip install --user \
   dpkt \
   pypcap \
   netaddr \
-  dnslib
+  dnslib \
+  pylzma
