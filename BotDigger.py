@@ -37,6 +37,10 @@ import smtplib
 import numpy
 import pcap
 import operator
+import bz2
+import gzip
+import pylzma as xz
+import zipfile
 from os import walk
 from dnslib import *
 from collections import *
@@ -91,6 +95,41 @@ type_table = {1:"A",        # IP v4 address, RFC 1035
 			15:"MX",       # Mail exchange, RFC 1035
 			28:"AAAA",     # IP v6 address, RFC 3596
 			}
+
+# From http://www.garykessler.net/library/file_sigs.html
+compressed_file_table = {
+	"\x42\x5a\x68": "bz2",
+	"\x1f\x8b\x08": "gz",
+	"\xfd\x37\x7a\x58\x5a\x00": "xz",
+	"\x50\x4b\x03\x04": "zip"
+}
+
+# Form http://stackoverflow.com/a/13044946/3934402
+def file_type(filename):
+	max_len = max(len(x) for x in compressed_file_table)
+	with open(filename) as f:
+		file_start = f.read(max_len)
+	for magic, filetype in compressed_file_table.items():
+		if file_start.startswith(magic):
+			return filetype
+	return None
+
+def openFile(filename, modes):
+	filetype = file_type(filename)
+	if filetype is None:
+		return open(filename, modes)
+	elif filetype == "bz2":
+		return bz2.BZ2File(filename)
+	elif filetype == "gz":
+		return gzip.open(filename)
+	elif filetype == "xz":
+		with open(filename, modes) as f:
+			return xz.LZMAFile(f)
+	elif filetype == "zip":
+		return zipfile.ZipFile(filename)
+	else:
+		# should never get here
+		raise LookupError("filetype is invalid")
 
 class Host():
 	def __init__(self):
@@ -1494,11 +1533,12 @@ def main(argv) :
 		outputFile = resultsFile
 		outputFilePrefix = resultsFile
 		with open(outputFile, 'w') as fpOutput:
-			pc = dpkt.pcap.Reader( open ( inputpcapfile, 'rb' ) )
-			singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
-			print inputpcapfile
-			timeoutDetection(hostDict, fpOutput)
-			cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
+			with openFile(inputpcapfile, 'rb') as f:
+				pc = dpkt.pcap.Reader(f)
+				singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
+				print inputpcapfile
+				timeoutDetection(hostDict, fpOutput)
+				cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
 
 	#offline detection using pcap files in a directory
 	if options.inputpcapDir:
@@ -1511,10 +1551,11 @@ def main(argv) :
 				print inputpcapfile
 				print outputFile
 				with open(outputFile, 'w') as fpOutput:
-					pc = dpkt.pcap.Reader( open ( inputpcapfile, 'rb' ) )
-					singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
-					timeoutDetection(hostDict, fpOutput)
-					cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
+					with openFile(inputpcapfile, 'rb') as f:
+						pc = dpkt.pcap.Reader(f)
+						singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
+						timeoutDetection(hostDict, fpOutput)
+						cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
 
 	#offline detection using DNS log files
 	if options.offlineDomainDirectory:
