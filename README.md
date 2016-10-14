@@ -58,7 +58,7 @@ Options:
   -p POPULARDOMAINFILE, --populardomain=POPULARDOMAINFILE,
             specify the file that contains popular domains (e.g., file top-1m.csv)
   -P PREFIX, --prefix=PREFIX,
-            specify the local network prefix (e.g., "192.168.")
+            specify the file including local network prefixes (e.g., NetworkPrefixes)
   -d DICTIONARYFILE, --dictionary=DICTIONARYFILE,
             specify the file that contains English dictionary (e.g., file wordsEn.txt)
   -o OFFLINEDOMAINFILE, --offlinefile=OFFLINEDOMAINFILE,

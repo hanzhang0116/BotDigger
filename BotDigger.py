@@ -171,6 +171,12 @@ def initialize_tables() :
 	global type_table
 
 # functions to load files
+def loadNetworkPrefix(networkPrefixFile, networkPrefixDict):
+	with open(networkPrefixFile, 'r') as fp:
+		for line in fp:
+			info = line.strip('\n')
+			networkPrefixDict[info] = None
+
 def loadExcludedHosts(excludedHostsFile, excludedHostsDict):
 	with open(excludedHostsFile, 'r') as fp:
 		for line in fp:
@@ -1029,6 +1035,13 @@ def removeLegitimateDomains(domainsList, ccTldDict, tldDict, dynamicDomainDict, 
 		domainsListReturn.remove(domainToDel)
 	return domainsListReturn
 
+# check whether an IP is in local networks
+def inPrefix(IP, networkPrefixDict):
+	for prefix in networkPrefixDict:
+		if IPAddress(IP) in IPNetwork(prefix):
+			return 1
+	return 0
+
 # check whether a domain exists
 def domainExistenceCheck(domain):
 	try:
@@ -1077,7 +1090,7 @@ def hexify(x):
 	toHex = lambda x:"".join([hex(ord(c))[2:].zfill(2) for c in x])
 	return toHex(x)
 
-def singleDNSFileDetection(dnsServerDict, prefix, inputFile, fpOutput):
+def singleDNSFileDetection(dnsServerDict, networkPrefixDict, inputFile, fpOutput):
 	global timestampPeriodBegin
 	timestampPeriodBegin = 0
 	domainIP = ""
@@ -1105,11 +1118,13 @@ def singleDNSFileDetection(dnsServerDict, prefix, inputFile, fpOutput):
 			if(len(info) == 11):
 				domainIP = info[10]
 			if (srcIP in dnsServerDict) :
-				if (prefix not in dstIP):
+				#if (prefix not in dstIP):
+				if inPrefix(dstIP, networkPrefixDict) == 0:
 					continue
 				ip = dstIP
 			if (dstIP in dnsServerDict) :
-				if (prefix not in srcIP):
+				#if (prefix not in srcIP):
+				if inPrefix(srcIP, networkPrefixDict) == 0:
 					continue
 				ip = srcIP
 			if (srcIP not in dnsServerDict) and (dstIP not in dnsServerDict):
@@ -1128,7 +1143,7 @@ def singleDNSFileDetection(dnsServerDict, prefix, inputFile, fpOutput):
 				hostDict[ip] = newHost
 			updateResponseDomain(hostDict, domain, qtype, rcode, ip, timestamp, domainIP, fpOutput)
 
-def singlePcapDetection(pc, fpOutput, dnsServerDict, prefix):
+def singlePcapDetection(pc, fpOutput, dnsServerDict, networkPrefixDict):
 	global timestampPeriodBegin
 	timestampPeriodBegin = 0
 	domainIP = ""
@@ -1181,11 +1196,13 @@ def singlePcapDetection(pc, fpOutput, dnsServerDict, prefix):
 					src_ip = socket.inet_ntoa(src)
 					dst_ip = socket.inet_ntoa(dst)
 					if (src_ip in dnsServerDict) :
-						if (prefix not in dst_ip):
+						#if (prefix not in dst_ip):
+						if inPrefix(dst_ip, networkPrefixDict) == 0:
 							continue
 						ip = dst_ip
 					if (dst_ip in dnsServerDict) :
-						if (prefix not in src_ip):
+						#if (prefix not in src_ip):
+						if inPrefix(src_ip, networkPrefixDict) == 0:
 							continue
 						ip = src_ip
 					if (src_ip not in dnsServerDict) and (dst_ip not in dnsServerDict):
@@ -1371,7 +1388,7 @@ def main(argv) :
 	totalResponseDomains = 0
 	totalQueryPkts = 0
 	totalQueryDomains = 0
-	prefix = ""
+	prefixFile = ""
 	interface = ""
 	tldListFile = ""
 	bigEnterpriseFile = ""
@@ -1390,6 +1407,7 @@ def main(argv) :
 	inputpcapfile = ""
 	inputpcapDir = ""
 	dnsServerDict = dict()
+	networkPrefixDict = dict()
 	ip = ""
 
 	parser = optparse.OptionParser()
@@ -1401,7 +1419,7 @@ def main(argv) :
 	parser.add_option("-c", "--configwords", action="store", type="string", dest="configWordsFile", help="specify the file that contains the words to ignore")
 	parser.add_option("-s", "--dnsserver", action="store", type="string", dest="dnsServerFile", help="specify the file that contains IPs of local RDNS")
 	parser.add_option("-p", "--populardomain", action="store", type="string", dest="popularDomainFile", help="specify the file that contains popular domains")
-	parser.add_option("-P", "--prefix", action="store", type="string", dest="prefix", help="specify the local network prefix (e.g., 192.168.)")
+	parser.add_option("-P", "--prefixFile", action="store", type="string", dest="prefixFile", help="specify the file including local network prefixes (e.g., NetworkPrefixes)")
 	parser.add_option("-d", "--dictionary", action="store", type="string", dest="dictionaryFile", help="specify the file that contains dictionary")
 	parser.add_option("-o", "--offlinefile", action="store", type="string", dest="offlineDomainFile", help="specify the file that contains DNS information")
 	parser.add_option("-O", "--offlinedirectory", action="store", type="string", dest="offlineDomainDirectory", help="specify the directory that contains DNS files")
@@ -1433,8 +1451,9 @@ def main(argv) :
 	if options.timeInterval:
 		timeInterval = options.timeInterval
 
-	if options.prefix:
-		prefix = options.prefix
+	if options.prefixFile:
+		prefixFile = options.prefixFile
+		loadNetworkPrefix(prefixFile, networkPrefixDict)
 	else:
 		parser.error("network prefix not given, use -P")
 
@@ -1523,7 +1542,7 @@ def main(argv) :
 		with open(outputFile, 'w') as fpOutput:
 			sys.stdout.write("Monitoring the DNS traffic on interface: %s\n" % interface)
 			pc = pcap.pcap(interface)
-			singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
+			singlePcapDetection(pc, fpOutput, dnsServerDict, networkPrefixDict)
 			timeoutDetection(hostDict, fpOutput)
 			cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
 
@@ -1535,7 +1554,7 @@ def main(argv) :
 		with open(outputFile, 'w') as fpOutput:
 			with openFile(inputpcapfile, 'rb') as f:
 				pc = dpkt.pcap.Reader(f)
-				singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
+				singlePcapDetection(pc, fpOutput, dnsServerDict, networkPrefixDict)
 				print inputpcapfile
 				timeoutDetection(hostDict, fpOutput)
 				cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
@@ -1553,7 +1572,7 @@ def main(argv) :
 				with open(outputFile, 'w') as fpOutput:
 					with openFile(inputpcapfile, 'rb') as f:
 						pc = dpkt.pcap.Reader(f)
-						singlePcapDetection(pc, fpOutput, dnsServerDict, prefix)
+						singlePcapDetection(pc, fpOutput, dnsServerDict, networkPrefixDict)
 						timeoutDetection(hostDict, fpOutput)
 						cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
 
@@ -1568,7 +1587,7 @@ def main(argv) :
 				outputFilePrefix = resultsFile + filename
 				outputFile = resultsFile + filename + "-BotResults"
 				with open(outputFile, 'w') as fpOutput:
-					singleDNSFileDetection(dnsServerDict, prefix, inputFile, fpOutput)
+					singleDNSFileDetection(dnsServerDict, networkPrefixDict, inputFile, fpOutput)
 					timeoutDetection(hostDict, fpOutput)
 					cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)
 
@@ -1577,7 +1596,7 @@ def main(argv) :
 		outputFile = resultsFile
 		outputFilePrefix = resultsFile
 		with open(outputFile, 'w') as fpOutput:
-			singleDNSFileDetection(dnsServerDict, prefix, offlineDomainFile, fpOutput)
+			singleDNSFileDetection(dnsServerDict, networkPrefixDict, offlineDomainFile, fpOutput)
 			timeoutDetection(hostDict, fpOutput)
 			cleanHostDict(hostDict, ccTldDict, tldDict, dynamicDomainDict)	
 
