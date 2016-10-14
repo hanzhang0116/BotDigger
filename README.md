@@ -58,7 +58,7 @@ Options:
   -p POPULARDOMAINFILE, --populardomain=POPULARDOMAINFILE,
             specify the file that contains popular domains (e.g., file top-1m.csv)
   -P PREFIX, --prefix=PREFIX,
-            specify the file including local network prefixes (e.g., NetworkPrefixes)
+            specify the file that contains local network prefixes (e.g., NetworkPrefixes)
   -d DICTIONARYFILE, --dictionary=DICTIONARYFILE,
             specify the file that contains English dictionary (e.g., file wordsEn.txt)
   -o OFFLINEDOMAINFILE, --offlinefile=OFFLINEDOMAINFILE,
@@ -109,7 +109,7 @@ NXDomains, and labeled C&C domains.
 4. Example:
    ```
 python BotDigger.py \
-  -B 4 -T 0.10 -w 300 -P "192.168." -R test@example.com \
+  -B 4 -T 0.10 -w 300 -P NetworkPrefixes -R test@example.com \
   -s DNSServerList -t TLDList -b OverloadDNSWebsites \
   -c InvalidWords -p top-1m.csv -d wordsEn.txt -e BigCompanies \
   -x ExculedHosts -D ExculedDomains -n DynamicDomains \
@@ -119,6 +119,7 @@ python BotDigger.py \
   - similarity threshold to cut the hierarchical clustering dendrogram is 0.1
   - time window is 300 seconds
   - send bot detection notice to test@example.com
+  - File containing local network prefixes is NetworkPrefixes
   - File containing local RDNS servers is DNSServerList
   - File containing all TLDs is TLDList
   - File containing overloaded DNS query websites is OverloadDNSWebsites
