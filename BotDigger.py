@@ -1219,7 +1219,7 @@ def singlePcapDetection(pc, fpOutput, dnsServerDict, networkPrefixDict):
 						newHost.startTime = ts
 						newHost.endTime = ts
 						hostDict[ip] = newHost
-					updateResponseDomain(hostDict, qname.name, qname.type, dns.get_rcode(), ip, ts, domainIP, fpOutput)
+					updateResponseDomain(hostDict, qname.name, qname.type, dns.rcode, ip, ts, domainIP, fpOutput)
 
 def decodeDname(question, dname):  # handle compression
 	i = 0
