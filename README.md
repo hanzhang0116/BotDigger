@@ -6,10 +6,9 @@ deployed in a single enterprise-like network. The inputs of BotDigger include
 source port, destination IP, destination port, DNS query/answer, DNS rcode, DNS
 qtype, queried domain).
 
-The design and implementation details can be found in the [BotDigger
-technical report][botdigger].
+The design and implementation details can be found in our published paper [BotDigger][botdigger].
 
-[botdigger]: http://www.cs.colostate.edu/~hanzhang/papers/BotDigger-techReport.pdf
+[botdigger]: http://www.cs.colostate.edu/~hanzhang/papers/BotDigger-TMA16.pdf
 
 ## Configuring BotDigger
 
