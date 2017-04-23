@@ -275,8 +275,9 @@ def distanceDomain(domain, DomainDict, ccTldDict, tldDict):
 		return ("not a domain", sys.maxint)
 	(domain2LD, domain3LD, domain2LDs, domain3LDs) = extractLevelDomain(domain, ccTldDict, tldDict)
 	for popularDomain in DomainDict:
-		if Levenshtein.distance(domain2LD, popularDomain) < minDistance:
-			minDistance = Levenshtein.distance(domain2LD, popularDomain)
+		distance = Levenshtein.distance(domain2LD.decode('utf-8'), popularDomain.decode('utf-8'))
+		if distance < minDistance:
+			minDistance = distance
 			similarDomain = popularDomain
 	#debug
 	#sys.stdout.write("subdomain: %s, similarDomain: %s, minDistance: %d\n" % (subdomain, similarDomain, minDistance))
