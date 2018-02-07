@@ -3,12 +3,4 @@
 # TODO use virtualenv
 
 # install the required packages
-pip install --user \
-  wordsegment \
-  python-levenshtein \
-  pythonwhois \
-  dpkt \
-  pypcap \
-  netaddr \
-  dnslib \
-  pylzma
+pip install --user -r requirements.txt

@@ -1,0 +1,8 @@
+dnslib==0.9.6
+dpkt==1.8.8
+netaddr==0.7.18
+pylzma==0.4.8
+pypcap==1.1.5
+python-Levenshtein==0.12.0
+pythonwhois==2.4.3
+wordsegment==0.6.2
