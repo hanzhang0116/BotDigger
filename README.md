@@ -38,6 +38,10 @@ or with your favorite package manager:
 * pythonwhois
 * wordsegment
 
+BotDigger has not been tested with the most recent Python modules listed above.
+Check the [requirements.txt](./requirements.txt) for specifics or (recommended)
+use the `PackagesInstallation.sh` script, which runs `pip -r requirements.txt`.
+
 ### Configure Network Information
 
 We need to give BotDigger some information about the network so that it
